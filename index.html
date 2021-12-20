@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+
+    <!--owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
     <title>Netflix Clone</title>
 </head>
 <body>
@@ -29,20 +34,57 @@
                 <p class='descricao'>
                     Geralt de Rivia, um caçador de monstros mutante, viaja ao encontro do seu destino num mundo caótico onde os humanos são mais perversos que os próprios monstros.
                 </p>
+                <div class="botoes">
+                    <button role='button' class='botao'>
+                        <i class="fas fa-play"></i>
+                        ASSISTIR AGORA
+                    </button>
+                    <button role='button' class='botao'>
+                        <i class="fas fa-info-circle"></i>
+                        MAIS INFORMAÇÕES
+                    </button>
+                </div> 
             </div>
-            <div class="botoes">
-            <button role='button' class='botao'>
-                <i class="fas fa-play"></i>
-                ASSISTIR AGORA
-            </button>
-            <button role='button' class='botao'>
-                <i class="fas fa-info-circle"></i>
-                MAIS INFORMAÇÕES
-            </button>
-            </div> 
+
         </div>
     </main>
-    <script src="js/scripts.js"></script>
+
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class='box-filme' src="/img/arcane.jpg" alt="arcane">
+            </div>
+            <div class="item">
+                <img class='box-filme' src="/img/dexter.jpg" alt="arcane">
+            </div>
+            <div class="item">
+                <img class='box-filme' src="/img/finch.jpg" alt="arcane">
+            </div>
+            <div class="item">
+                <img class='box-filme' src="/img/flash.jpg" alt="arcane">
+            </div>
+            <div class="item">
+                <img class='box-filme' src="/img/lucifer.jpg" alt="arcane">
+            </div>
+            <div class="item">
+                <img class='box-filme' src="/img/simpsons.jpg" alt="arcane">
+            </div>
+            <div class="item">
+                <img class='box-filme' src="/img/venom.jpg" alt="arcane">
+            </div>
+            <div class="item">
+                <img class='box-filme' src="/img/invasao.jpg" alt="arcane">
+            </div>
+            
+        </div> 
+    </div>
+
     <script src="https://kit.fontawesome.com/3ce06b875b.js" crossorigin="anonymous"></script>
+
+    <!--owl script-->
+    
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
 </body>
 </html>

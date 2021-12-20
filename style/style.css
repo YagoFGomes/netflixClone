@@ -48,6 +48,12 @@ color: var(--branco);
     justify-content: center;
     align-items: flex-start;
 }
+.filme-principal .container{
+    width: 70%;
+}
+.container{
+    margin-left: 20px;
+}
 .filme-principal .descricao{
     margin-top: 10px;
     margin-bottom: 40px;
@@ -75,4 +81,30 @@ color: var(--branco);
 }
 .botao i{
     margin-right: 5px;
+}
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+/*responsividade*/
+
+@media screen and (max-width: 700px) {
+    header .container{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5px;
+    }
+    .botao{
+        margin-top: 5px;
+        width: 300px;
+
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .descricao{
+        width: 500px;
+    }
 }
